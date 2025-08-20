@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #333;
+            margin-bottom: 10px;
+        }
+
+        /* About section */
+        .about {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .about img {
+            border-radius: 50%;
+            border: 3px solid #333;
+        }
+
+        /* Education table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #333;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background: #555;
+            color: white;
+        }
+
+        /* Skills list */
+        ul {
+            list-style-type: square;
+        }
+
+        /* Projects section */
+        .project {
+            margin: 10px 0;
+        }
+
+        .project a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Heading -->
+    <header>
+        <h1>My Portfolio</h1>
+        <p><em>Aspiring Software Engineer | Web Developer</em></p>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about">
+            <img src="https://www.google.com/search?q=admin+logo&sca_esv=0a74b9f5a5d821da&udm=2&biw=1536&bih=738&sxsrf=AE3TifOmwIG6YvGB-CoqjzxAes-wd2yYhg%3A1755713713202&ei=sRCmaMCSDK-vseMP18XgyQs&oq=admin+&gs_lp=EgNpbWciBmFkbWluICoCCAEyChAAGIAEGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyDRAAGIAEGLEDGEMYigVI8hFQ_QFY_QFwAXgAkAEAmAGUAaABlAGqAQMwLjG4AQHIAQD4AQGYAgKgArYBwgIGEAAYBxgemAMAiAYBkgcDMS4xoAeHBbIHAzAuMbgHpwHCBwMzLTLIBx4&sclient=img#vhid=USfyICEyR-rE3M&vssid=mosaic" alt="Profile Photo" title="This is me" width="150" height="150">
+            <p>
+                Hello! My name is <b>Vanshika</b>. I am a passionate <i>Computer Science student</i> with interest in 
+                <u>Web Development</u> and <mark>Machine Learning</mark>. 
+                I enjoy building creative projects and solving challenging problems. 
+                I strongly believe in <strong>continuous learning</strong> and <em>team collaboration</em>.
+            </p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Year</th>
+                
+            </tr>
+            <tr>
+                <td rowspan="2">B.Tech CSE</td>
+                <td>Thapar Institute of Engineering</td>
+                <td>2023 - 2027</td>
+                
+            </tr>
+            <tr>
+                <td colspan="3">Specialization: Artificial Intelligence & ML</td>
+            </tr>
+            <tr>
+                <td>High School</td>
+                <td>XYZ Senior Secondary School</td>
+                <td>2021</td>
+                
+            </tr>
+        </table>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: C, C++, Python, Java</li>
+            <li>Web Development: HTML, CSS, JavaScript</li>
+            <li>Databases: MySQL</li>
+            <li>Tools: Git, VS Code</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ol>
+            <li class="project">
+                Personal Portfolio Website – A responsive website built using 
+                <b>HTML & CSS</b>. 
+                <a href="https://github.com/vanshika-113?tab=repositories" target="_blank">View on GitHub</a>
+            </li>
+            
+        </ol>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:vvanshika_be23@thapar.edu">vvanshika_be23@thapar.edu</a></p>
+        <p>
+             
+            <a href="https://github.com/vanshika-113?tab=repositories" target="_blank">GitHub</a>
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made by Vanshika</p>
+    </footer>
+
+</body>
+</html>
