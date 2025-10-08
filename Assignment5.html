@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assignment 5 - JavaScript</title>
+</head>
+<body>
+  <h1>Assignment 5 - JavaScript Programs</h1>
+  
+
+  <script>
+    // ---------- Q1 ----------
+    console.log("Q1: Sum, Difference, Product, Quotient");
+    let num1 = parseFloat(prompt("Enter first number: "));
+    let num2 = parseFloat(prompt("Enter second number: "));
+    console.log("Sum:", num1 + num2);
+    console.log("Difference:", num1 - num2);
+    console.log("Product:", num1 * num2);
+    console.log("Quotient:", num1 / num2);
+
+    // ---------- Q2 ----------
+    console.log("\nQ2: Array Operations");
+    let numbers = [12, 5, 25, 8, 19];
+    console.log("Numbers:", numbers);
+    console.log("Largest:", Math.max(...numbers));
+    console.log("Smallest:", Math.min(...numbers));
+    console.log("Ascending:", [...numbers].sort((a, b) => a - b));
+    console.log("Descending:", [...numbers].sort((a, b) => b - a));
+
+    // ---------- Q3 ----------
+    console.log("\nQ3: Form Validation (Use form below)");
+
+    // ---------- Q4 ----------
+    console.log("\nQ4: Student Object");
+    let student = {
+      name: "Vanshika",
+      age: 20,
+      grades: 88
+    };
+    student.class = "CSE-3A";
+    student.grades = 92;
+    for (let key in student) {
+      console.log(key + ":", student[key]);
+    }
+
+    // ---------- Q5 ----------
+    console.log("\nQ5: Array Methods");
+    function processArray(arr) {
+      let result = arr.filter(num => num % 2 === 0).map(num => num * 2);
+      let sum = result.reduce((acc, num) => acc + num, 0);
+      console.log("Processed Array:", result);
+      console.log("Sum:", sum);
+    }
+    processArray([1, 2, 3, 4, 5, 6, 7, 8]);
+  </script>
+
+  <!-- Q3 Form -->
+  <h2>Q3: Form Validation</h2>
+  <form onsubmit="return validateForm()">
+    Name: <input type="text" id="name"><br><br>
+    Email: <input type="text" id="email"><br><br>
+    Age: <input type="number" id="age"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    function validateForm() {
+      let name = document.getElementById("name").value.trim();
+      let email = document.getElementById("email").value.trim();
+      let age = parseInt(document.getElementById("age").value);
+      let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (name === "") {
+        alert("Name cannot be empty");
+        return false;
+      }
+      if (!emailPattern.test(email)) {
+        alert("Invalid email format");
+        return false;
+      }
+      if (isNaN(age) || age < 18 || age > 100) {
+        alert("Age must be between 18 and 100");
+        return false;
+      }
+      alert("Form submitted successfully!");
+      return true;
+    }
+  </script>
+</body>
+</html>
